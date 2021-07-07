@@ -42,5 +42,5 @@ sudo apt-get install -y \
 ## Add the docker group if it doesn't already exist
 sudo groupadd docker
 
-## Add the connected user "$USER" to the docker group
-sudo gpasswd -a $USER docker
+## Add the connected user "$SUDO_USER" to the docker group
+sudo gpasswd -a $SUDO_USER docker
