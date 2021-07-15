@@ -44,3 +44,6 @@ sudo groupadd docker
 
 ## Add the connected user "$SUDO_USER" to the docker group
 sudo gpasswd -a $SUDO_USER docker
+
+## Add the config that all users can read and write to the docker socket
+sudo chmod 666 /var/run/docker.sock
